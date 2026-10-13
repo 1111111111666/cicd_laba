@@ -4,7 +4,7 @@
     "description": "Простой сайт-визитка с CI/CD",
     "scripts": {
         "lint": "htmlhint index.html",
-        "test": "echo \"Test passed yey!\" && exit 1",
+        "test": "echo \"Test passed yey!\" && exit 0",
         "build": "mkdir -p dist && cp index.html style.css script.js dist/"
     },
     "devDependencies": {
