@@ -1,13 +1,13 @@
 {
-    "name":"my-site",
-    "version":"1.0.0",
+    "name": "my-site",
+    "version": "1.0.0",
     "description": "Простой сайт-визитка с CI/CD",
     "scripts": {
-        "lint":"htmllint index.html",
-        "test":"echo \"Test passed yey!\" && exit 0",
+        "lint": "htmlhint index.html",
+        "test": "echo \"Test passed yey!\" && exit 0",
         "build": "mkdir -p dist && cp index.html style.css script.js dist/"
     },
-    "dependencies": {
-        "htmllint-cli": "0.0.7"
+    "devDependencies": {
+        "htmlhint": "^1.1.4"
     }
 }
