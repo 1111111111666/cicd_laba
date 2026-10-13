@@ -1,4 +1,5 @@
-![CI/CD](https://github.com/ЛОГИН/my-site/actions/workflows/ci-cd.yml/badge.svg)
+![CI/CD](https://github.com/1111111111666/cicd_laba/actions/workflows/ci-cd.yml/badge.svg)
+
 ## Ответы на вопросы
 
 **1. Чем отличается CI от CD?**
