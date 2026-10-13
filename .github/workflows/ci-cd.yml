@@ -40,6 +40,11 @@ jobs:
           name: site-build
           path: dist/
 
+      - name: Check links
+        uses: lycheeverse/lychee-action@v1
+        with:
+            args: --verbose --no-progress index.html
+
   # Задача 2: развёртывание (CD)
   deploy:
     name: Deploy to GitHub Pages
