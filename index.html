@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт-визитка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Няшка Няшковна</h1>
+        <p class="subtitle">Веб-разработчик</p>
+        <button id="theme-toggle" class="theme-btn">🌙 Сменить тему</button>
+    </header>
+
+    <main class="container">
+        <section class="about">
+            <img src="https://i.pinimg.com/1200x/c5/f7/bd/c5f7bd11ea686ad5f99af98b619c64fd.jpg" alt="Моё фото" class="avatar">
+            <div class="about-text">
+                <h2>Обо мне</h2>
+                <p>Привет! Я начинающий веб-разработчик. Изучаю HTML, CSS, JavaScript и CI/CD.</p>
+                <p>Этот сайт автоматически собирается и развёртывается через GitHub Actions.</p>
+            </div>
+        </section>
+
+        <section class="counter-section">
+            <h2>Счётчик кликов</h2>
+            <p>Ты нажал: <span id="counter">0</span> раз</p>
+            <button id="click-btn" class="click-btn">Нажми меня</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Супер крутой сайт</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+    background: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.header {
+    background: linear-gradient(135deg, #ea66b5, #57172a);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.theme-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.theme-btn:hover {
+    background: white;
+    color: #57172a;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.about {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+body.dark .about {
+    background: #2a2a2a;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.about-text h2 {
+    margin-bottom: 1rem;
+    color: #57172a;
+}
+
+.counter-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+body.dark .counter-section {
+    background: #2a2a2a;
+}
+
+.counter-section h2 {
+    margin-bottom: 1rem;
+    color: #57172a;
+}
+
+#counter {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #57172a;
+}
+
+.click-btn {
+    background: #ea66b5;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.click-btn:hover {
+    background: #57172a;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    opacity: 0.7;
+} 
+
+body.dark .about-text h2,
+body.dark .counter-section h2 {
+    color: #f0f0f0;
+} 
+body.dark #counter {
+    color: #ea66b5;
+}
+
+/* Адаптивность под мобильные */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+}
